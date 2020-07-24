@@ -1,3 +1,4 @@
+
 var input = document.querySelector('.input-form');
 var inputButton = document.querySelector('.input-button');
 var questionRepeat = document.querySelector('h2');
@@ -26,10 +27,11 @@ var answers = [
   "Very doubtful."
 ];
 
-questionRepeat.addEventListener('click', repeatInput);
-questionAnswer.addEventListener('click', loadAnswer);
+inputButton.addEventListener('click', repeatInput);
+inputButton.addEventListener('click', loadAnswer);
 
 function repeatInput() {
+  console.log("hi")
   questionRepeat.innerText = input.value;
 }
 
