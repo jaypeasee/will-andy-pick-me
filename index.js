@@ -49,5 +49,6 @@ function clearAnswer() {
   if (questionRepeat.innerText !== "" && questionAnswer.innerText !== "") {
     questionRepeat.innerText = "";
     questionAnswer.innerText = "";
+    clearButton.style.backgroundColor = "#D0CDCD";
   }
 }

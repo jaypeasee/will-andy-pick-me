@@ -27,6 +27,18 @@ h1 {
   color: #2B4E80;
 }
 
+h2 {
+  font-family:'Open Sans', sans-serif;
+  margin-top: 0px;
+  font-size: 1em;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
 section {
   display: flex;
   flex-direction: row;
@@ -49,7 +61,7 @@ section {
   width: 100px;
 }
 
-.form input {
+.input-form {
   width: 80%;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -68,6 +80,10 @@ section {
   color: white;
   font-family: 'Open Sans', sans-serif;
   height: 30px;
+}
+
+.input-button:hover {
+  background-color: #1C3455;
 }
 
 .woody img {
