@@ -42,6 +42,7 @@ function giveAnswer() {
   questionAnswer.innerText = answers[getRandomIndex(answers)];
   input.value = "";
   eightBall.remove();
+  clearButton.style.backgroundColor = "#DE4841";
 };
 
 function clearAnswer() {
@@ -50,7 +51,3 @@ function clearAnswer() {
     questionAnswer.innerText = "";
   }
 }
-//if !h2 === "" && !h3 === ""
-//questionRepeat.innerText = "";
-//questionAnswer.innerText = "";
-//else do nothing.
