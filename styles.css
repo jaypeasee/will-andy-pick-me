@@ -13,6 +13,7 @@ clear button disabled: #D0CDCD
 
 button {
   border: none;
+  outline: none;
 }
 
 body {
