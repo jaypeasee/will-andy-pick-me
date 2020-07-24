@@ -1,3 +1,7 @@
+var input = document.querySelector('.input-form');
+var inputButton = document.querySelector('.input-button');
+var questionRepeat = document.querySelector('h2');
+var questionAnswer = document.querySelector('.question-answer');
 
 var answers = [
   "It is certain.",
@@ -21,3 +25,14 @@ var answers = [
   "Outlook not so good.",
   "Very doubtful."
 ];
+
+questionRepeat.addEventListener('click', repeatInput);
+questionAnswer.addEventListener('click', loadAnswer);
+
+function repeatInput() {
+  questionRepeat.innerText = input.value;
+}
+
+function loadAnswer() {
+
+}
