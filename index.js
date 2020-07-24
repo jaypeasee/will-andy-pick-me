@@ -38,11 +38,13 @@ function getRandomIndex(array) {
 };
 
 function giveAnswer() {
-  questionRepeat.innerText = input.value;
-  questionAnswer.innerText = answers[getRandomIndex(answers)];
-  input.value = "";
-  eightBall.remove();
-  clearButton.style.backgroundColor = "#DE4841";
+  if (input.value !== "") {
+    questionRepeat.innerText = input.value;
+    questionAnswer.innerText = answers[getRandomIndex(answers)];
+    input.value = "";
+    eightBall.remove();
+    clearButton.style.backgroundColor = "#DE4841";
+  }
 };
 
 function clearAnswer() {
@@ -50,5 +52,6 @@ function clearAnswer() {
     questionRepeat.innerText = "";
     questionAnswer.innerText = "";
     clearButton.style.backgroundColor = "#D0CDCD";
+
   }
 }
