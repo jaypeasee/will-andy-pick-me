@@ -76,14 +76,14 @@ section {
 .input-button {
   width: 80%;
   margin-bottom: 30px;
-  background-color: #607AA0;
+  background-color: #1C3455;
   color: white;
   font-family: 'Open Sans', sans-serif;
   height: 30px;
 }
 
-.input-button:hover {
-  background-color: #1C3455;
+#textfield:invalid + .input-button {
+  background-color: #607AA0
 }
 
 .woody img {
@@ -100,4 +100,8 @@ section {
   font-family: 'Open Sans', sans-serif;
   color: white;
   margin-bottom: 20px;
+}
+
+.hidden {
+  display: none!important;
 }
