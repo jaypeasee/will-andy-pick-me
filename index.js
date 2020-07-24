@@ -36,4 +36,5 @@ function getRandomIndex(array) {
 function giveAnswer() {
   questionRepeat.innerText = input.value;
   questionAnswer.innerText = answers[getRandomIndex(answers)];
+  input.value = "";
 };
