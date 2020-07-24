@@ -1,8 +1,8 @@
 
 var input = document.querySelector('.input-form');
 var inputButton = document.querySelector('.input-button');
-var questionRepeat = document.querySelector('h2');
-var questionAnswer = document.querySelector('.question-answer');
+var questionRepeat = document.querySelector('h3');
+var questionAnswer = document.querySelector('h2');
 
 var answers = [
   "It is certain.",
@@ -27,14 +27,13 @@ var answers = [
   "Very doubtful."
 ];
 
-inputButton.addEventListener('click', repeatInput);
-inputButton.addEventListener('click', loadAnswer);
+inputButton.addEventListener('click', giveAnswer);
 
-function repeatInput() {
-  console.log("hi")
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+};
+
+function giveAnswer() {
   questionRepeat.innerText = input.value;
-}
-
-function loadAnswer() {
-
-}
+  questionAnswer.innerText = answers[getRandomIndex(answers)];
+};
