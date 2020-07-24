@@ -4,6 +4,7 @@ var inputButton = document.querySelector('.input-button');
 var questionRepeat = document.querySelector('h3');
 var questionAnswer = document.querySelector('h2');
 var eightBall = document.querySelector('.eight-ball')
+var clearButton = document.querySelector('.clear');
 
 var answers = [
   "It is certain.",
@@ -29,6 +30,8 @@ var answers = [
 ];
 
 inputButton.addEventListener('click', giveAnswer);
+clearButton.addEventListener('click', clearAnswer);
+
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -40,3 +43,14 @@ function giveAnswer() {
   input.value = "";
   eightBall.remove();
 };
+
+function clearAnswer() {
+  if (questionRepeat.innerText !== "" && questionAnswer.innerText !== "") {
+    questionRepeat.innerText = "";
+    questionAnswer.innerText = "";
+  }
+}
+//if !h2 === "" && !h3 === ""
+//questionRepeat.innerText = "";
+//questionAnswer.innerText = "";
+//else do nothing.
