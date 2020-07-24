@@ -10,18 +10,29 @@ light blue background: #E6ECF4;
 clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-family: 'Life Savers', serif;
+  display: flex;
+  justify-content: center;
 }
 
 section {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #E6ECF4;
+  align-items: center;
+  width: 300px;
 }
 
 .form img {
@@ -29,7 +40,24 @@ section {
   width: 70px;
 }
 
+.form input {
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.input-button {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
 .woody img {
   height: 200px;
   width: 200px;
+}
+
+.clear {
+  width: 50px;
+  align-self: flex-end;
+  margin: 20px;
 }
